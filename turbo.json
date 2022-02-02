@@ -7,6 +7,9 @@
     "lint": {
       "outputs": []
     },
+    "land#dev": {
+      "cache": false
+    },
     "dev": {
       "cache": false
     }
