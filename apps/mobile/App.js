@@ -73,10 +73,7 @@ const App: () => Node = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Button
-            title="My Button"
-            style={{backgroundColor: 'blue', padding: 10}}
-          />
+          <Button title="My Button" />
           <Section title="Step Zero">
             <Text style={styles.highlight}>8</Text>
           </Section>
