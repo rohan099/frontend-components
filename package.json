@@ -8,6 +8,8 @@
       "apps/*"
     ],
     "nohoist": [
+      "**/react",
+      "**/react-dom",
       "**/react-native",
       "**/react-native/**",
       "**/@react-native-*",
@@ -26,7 +28,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean:turbo": "rm -rf node_modules"
+    "mobile:clean": "rm -rf node_modules && rm -rf apps/mobile/node_modules"
   },
   "devDependencies": {
     "prettier": "^2.5.1",

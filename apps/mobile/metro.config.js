@@ -101,6 +101,7 @@ console.log('watchFolders', config.watchFolders);
 
 config.resolver.extraNodeModules = {
   'react-native': path.resolve(__dirname, 'node_modules/react-native'),
+  react: path.resolve(__dirname, 'node_modules/react'),
   // '@react-navigation/native': path.resolve(
   //   __dirname,
   //   '../../node_modules/@react-navigation/native',

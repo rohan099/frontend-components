@@ -25,10 +25,9 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import {Add, Multiply} from 'services';
+import {Button} from 'uim';
 
 const Section = ({children, title}): Node => {
-  console.log('Add', Add(2, 3), Multiply(2, 3));
-
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -55,6 +54,8 @@ const Section = ({children, title}): Node => {
 };
 
 const App: () => Node = () => {
+  console.log('Add - ', Add(2, 3), Multiply(2, 3));
+
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -72,6 +73,7 @@ const App: () => Node = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Button />
           <Section title="Step Zero">
             <Text style={styles.highlight}>6</Text>
           </Section>

@@ -13,6 +13,12 @@
     "land#dev": {
       "cache": false
     },
+    "uim#build": {
+      "outputs": ["dist/**"]
+    },
+    "uim#dev": {
+      "cache": false
+    },
     "dev": {
       "cache": false
     }
