@@ -25,7 +25,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import {Add, Multiply} from 'services';
-import {Button} from 'uim';
+import {Button} from 'uin';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -73,9 +73,12 @@ const App: () => Node = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Button />
+          <Button
+            title="My Button"
+            style={{backgroundColor: 'blue', padding: 10}}
+          />
           <Section title="Step Zero">
-            <Text style={styles.highlight}>6</Text>
+            <Text style={styles.highlight}>8</Text>
           </Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.js (Mobile +)</Text> to

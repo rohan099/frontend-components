@@ -8117,7 +8117,7 @@
   "resolved" "file:packages/ui"
   "version" "0.0.0"
 
-"uim@*", "uim@file:/Users/rajiv/Projects/Learning/Turborepo/turborepo-stack/packages/uim":
+"uim@file:/Users/rajiv/Projects/Learning/Turborepo/turborepo-stack/packages/uim":
   "resolved" "file:packages/uim"
   "version" "1.0.0"
 
