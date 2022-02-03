@@ -7154,6 +7154,10 @@
     "parseurl" "~1.3.3"
     "send" "0.17.2"
 
+"services@file:/Users/rajiv/Projects/Learning/Turborepo/turborepo-stack/packages/services":
+  "resolved" "file:packages/services"
+  "version" "1.0.0"
+
 "set-blocking@^2.0.0":
   "integrity" "sha1-BF+XgtARrppoA93TgrJDkrPYkPc="
   "resolved" "https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz"

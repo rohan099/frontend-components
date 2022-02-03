@@ -17,7 +17,6 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
 import {
   Colors,
   DebugInstructions,
@@ -25,8 +24,11 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {Add, Multiply} from 'services';
 
 const Section = ({children, title}): Node => {
+  console.log('Add', Add(2, 3), Multiply(2, 3));
+
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -70,9 +72,12 @@ const App: () => Node = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Section title="Step Zero">
+            <Text style={styles.highlight}>6</Text>
+          </Section>
           <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js (Mobile)</Text> to change
-            this screen and then come back to see your edits.
+            Edit <Text style={styles.highlight}>App.js (Mobile +)</Text> to
+            change this screen and then come back to see your edits.
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />

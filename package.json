@@ -2,28 +2,31 @@
   "name": "turborepo-basic-shared",
   "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "nohoist": [
-    "**/react-native",
-    "**/react-native/**",
-    "**/@react-native-*",
-    "**/@react-native-*/**",
-    "**/react-native-*",
-    "**/react-native-*/**",
-    "**/*react-navigation/native*",
-    "**/*react-navigation/native*/**",
-    "**/metro-*",
-    "**/metro-*/**"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/@react-native-*",
+      "**/@react-native-*/**",
+      "**/react-native-*",
+      "**/react-native-*/**",
+      "**/*react-navigation/native*",
+      "**/*react-navigation/native*/**",
+      "**/metro-*",
+      "**/metro-*/**"
+    ]
+  },
   "scripts": {
     "turbo": "turbo",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean:turbo": "rm -rf node_modules"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
