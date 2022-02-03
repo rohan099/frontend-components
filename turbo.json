@@ -7,6 +7,9 @@
     "lint": {
       "outputs": []
     },
+    "mobile#ios": {
+      "cache": false
+    },
     "land#dev": {
       "cache": false
     },

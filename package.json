@@ -6,6 +6,18 @@
     "apps/*",
     "packages/*"
   ],
+  "nohoist": [
+    "**/react-native",
+    "**/react-native/**",
+    "**/@react-native-*",
+    "**/@react-native-*/**",
+    "**/react-native-*",
+    "**/react-native-*/**",
+    "**/*react-navigation/native*",
+    "**/*react-navigation/native*/**",
+    "**/metro-*",
+    "**/metro-*/**"
+  ],
   "scripts": {
     "turbo": "turbo",
     "build": "turbo run build",
