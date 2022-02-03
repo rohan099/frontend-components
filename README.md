@@ -7,3 +7,5 @@ https://rjvim.notion.site/Exploring-Turborepo-af1767580ecd4be58e89b4298fa8d4db
 npm run turbo run land#dev
 
 npm run turbo run mobile#ios
+
+The land app is deployed to: https://turborepo-stack-land.vercel.app/
