@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { Button } from "ui";
 
 const Home: NextPage = () => {
-  console.log("process.env", process.env);
+  console.log("process.env", process.env.NEXT_PUBLIC_API_URL);
 
   return (
     <div className="my-12 flex flex-col items-center max-w-2xl mx-auto">
