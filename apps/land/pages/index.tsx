@@ -11,6 +11,7 @@ const Home: NextPage = () => {
         Hello world! Welcome to land.
       </h1>
       <pre> {process.env.NEXT_PUBLIC_API_URL}</pre>
+      <pre> {process.env.NEXT_PUBLIC_API_URL_2}</pre>
     </div>
   );
 };
