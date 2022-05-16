@@ -11,12 +11,12 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
+    "@reusejs/react-native-component-template": "^0.0.4",
     "react": "17.0.2",
     "react-native": "0.67.2",
     "services": "*"
   },
   "devDependencies": {
-    "uin": "*",
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
@@ -26,7 +26,24 @@
     "metro-config": "^0.67.0",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-native-monorepo-tools": "^1.1.4",
-    "react-test-renderer": "17.0.2"
+    "react-test-renderer": "17.0.2",
+    "uin": "*"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**/react",
+      "**/react-dom",
+      "**/react-native",
+      "**/react-native/**",
+      "**/@react-native-*",
+      "**/@react-native-*/**",
+      "**/react-native-*",
+      "**/react-native-*/**",
+      "**/*react-navigation/native*",
+      "**/*react-navigation/native*/**",
+      "**/metro-*",
+      "**/metro-*/**"
+    ]
   },
   "resolutions": {
     "@types/react": "^17",
