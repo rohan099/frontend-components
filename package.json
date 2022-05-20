@@ -31,7 +31,9 @@
     "mobile:clean": "rm -rf node_modules && rm -rf apps/mobile/node_modules",
     "land:clean": "rm -rf node_modules && rm -rf apps/land/node_modules",
     "land:dev": "turbo run land#dev",
-    "mobile:ios": "turbo run mobile#ios"
+    "mobile:ios": "turbo run mobile#ios",
+    "np": "np --no-publish",
+    "postversion": "react-native-version"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
