@@ -49,18 +49,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-caches-
       - name: Make Gradlew Executable
-        run: cd android && chmod +x ./gradlew
+        run: cd apps/mobile/android && chmod +x ./gradlew
 
       - name: Generate App APK
         run: |
-          cd android && ./gradlew assembleRelease --no-daemon
+          cd apps/mobile/android && ./gradlew assembleRelease --no-daemon
 
       ## sign generated apk
       - name: Sign APK
         id: sign_app
         uses: r0adkll/sign-android-release@v1
         with:
-          releaseDirectory: android/app/build/outputs/apk/release
+          releaseDirectory: apps/mobile/android/app/build/outputs/apk/release
           signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
           alias: ${{ secrets.ANDROID_ALIAS }}
           keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
