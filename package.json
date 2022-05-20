@@ -1,6 +1,6 @@
 {
   "name": "turborepo-basic-shared",
-  "version": "0.1.6",
+  "version": "0.1.5",
   "private": true,
   "workspaces": {
     "packages": [
@@ -32,7 +32,7 @@
     "land:clean": "rm -rf node_modules && rm -rf apps/land/node_modules",
     "land:dev": "turbo run land#dev",
     "mobile:ios": "turbo run mobile#ios",
-    "np": "np --no-publish",
+    "np": "np --no-publish --no-yarn",
     "postversion": "cd apps/mobile && yarn react-native-version"
   },
   "devDependencies": {
