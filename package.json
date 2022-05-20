@@ -32,7 +32,7 @@
     "land:clean": "rm -rf node_modules && rm -rf apps/land/node_modules",
     "land:dev": "turbo run land#dev",
     "mobile:ios": "turbo run mobile#ios",
-    "np": "cd apps/mobile && yarn np --no-publish --yarn",
+    "np": "np --no-publish --yarn",
     "postversion": "cd apps/mobile && yarn react-native-version"
   },
   "devDependencies": {
