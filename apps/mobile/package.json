@@ -8,8 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "clean": "rm -rf .turbo && rm -rf node_modules",
-    "postversion": "react-native-version"
+    "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
     "@reusejs/react-native-component-template": "^0.0.4",
