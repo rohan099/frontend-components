@@ -33,7 +33,7 @@
     "land:dev": "turbo run land#dev",
     "mobile:ios": "turbo run mobile#ios",
     "np": "np --no-publish --yarn",
-    "postversion": "cd apps/mobile && react-native-version"
+    "postversion": "cd apps/mobile && yarn react-native-version"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
