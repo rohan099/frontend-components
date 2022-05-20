@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint .",
     "clean": "rm -rf .turbo && rm -rf node_modules",
-    "np": "np --no-publish",
+    "np": "np --no-publish --yarn",
     "postversion": "react-native-version"
   },
   "dependencies": {
