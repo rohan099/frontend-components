@@ -32,7 +32,7 @@
     "land:clean": "rm -rf node_modules && rm -rf apps/land/node_modules",
     "land:dev": "turbo run land#dev",
     "mobile:ios": "turbo run mobile#ios",
-    "np": "cd apps/mobile && yarn np --no-publish --no-yarn --no-tests"
+    "np": "turbo run mobile#np"
   },
   "devDependencies": {
     "prettier": "^2.5.1",

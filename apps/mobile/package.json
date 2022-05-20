@@ -9,7 +9,8 @@
     "test": "jest",
     "lint": "eslint .",
     "clean": "rm -rf .turbo && rm -rf node_modules",
-    "postversion": "react-native-version"
+    "postversion": "react-native-version",
+    "np": "np --no-publish --no-yarn --no-tests"
   },
   "dependencies": {
     "@reusejs/react-native-component-template": "^0.0.4",
