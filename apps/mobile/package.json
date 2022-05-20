@@ -8,7 +8,9 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "clean": "rm -rf .turbo && rm -rf node_modules",
+    "np": "np --no-publish",
+    "postversion": "react-native-version"
   },
   "dependencies": {
     "@reusejs/react-native-component-template": "^0.0.4",
@@ -30,22 +32,6 @@
     "react-native-version": "^4.0.0",
     "react-test-renderer": "17.0.2",
     "uin": "*"
-  },
-  "workspaces": {
-    "nohoist": [
-      "**/react",
-      "**/react-dom",
-      "**/react-native",
-      "**/react-native/**",
-      "**/@react-native-*",
-      "**/@react-native-*/**",
-      "**/react-native-*",
-      "**/react-native-*/**",
-      "**/*react-navigation/native*",
-      "**/*react-navigation/native*/**",
-      "**/metro-*",
-      "**/metro-*/**"
-    ]
   },
   "resolutions": {
     "@types/react": "^17",
