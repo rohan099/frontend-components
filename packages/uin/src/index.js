@@ -1,3 +1,4 @@
 import { Button } from "./button";
 import {BlueButton} from './blueButton'
-export { Button, BlueButton };
+import { RedButton} from './redButton'
+export { Button, BlueButton, RedButton };
