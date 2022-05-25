@@ -25,7 +25,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import {Add, Multiply} from 'services';
-import {Button} from 'uin';
+import {Button,BlueButton} from 'uin';
 import {Box} from '@reusejs/react-native-component-template';
 
 const Section = ({children, title}): Node => {
@@ -74,7 +74,7 @@ const App: () => Node = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Button title="My Button" />
+          <BlueButton title="My Button" />
 
           <Box />
         </View>

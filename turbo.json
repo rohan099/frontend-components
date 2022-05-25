@@ -28,6 +28,9 @@
     },
     "dev": {
       "cache": false
+    },
+    "mobile#android": {
+      "cache": false
     }
   }
 }

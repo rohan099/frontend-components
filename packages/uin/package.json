@@ -1,7 +1,7 @@
 {
-  "name": "uin",
-  "version": "0.0.0",
-  "private": true,
+  "name": "native-comp3",
+  "version": "0.0.1",
+  "private": false,
   "main": "src",
   "scripts": {
     "lint": "eslint .",
@@ -10,6 +10,10 @@
     "test:watch": "yarn jest --watch",
     "typecheck": "tsc"
   },
+  "keywords": [
+    "Button",
+    "Blue-Button"
+  ],
   "devDependencies": {
     "@react-native-async-storage/async-storage": "^1.15.7",
     "@types/react": "^17.0.19",
