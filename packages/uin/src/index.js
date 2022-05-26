@@ -1,4 +1,5 @@
 import { Button } from "./button";
 import {BlueButton} from './blueButton'
 import { RedButton} from './redButton'
-export { Button, BlueButton, RedButton };
+import { GradientButton } from "./gradientButton";
+export { Button, BlueButton, RedButton, GradientButton };

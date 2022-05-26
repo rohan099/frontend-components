@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "@reusejs/react-native-component-template": "^0.0.4",
+    "expo-constants": "^13.1.1",
     "react": "18.1.0",
     "react-native": "0.68.2",
+    "react-native-unimodules": "^0.14.10",
     "services": "*"
   },
   "devDependencies": {

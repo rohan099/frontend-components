@@ -1,8 +1,8 @@
 {
-  "name": "native-comp3",
+  "name": "uin",
   "version": "0.0.3",
   "private": false,
-  "main": "src",
+  "main": "src/index.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "yarn lint --fix",
