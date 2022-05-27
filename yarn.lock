@@ -8962,6 +8962,11 @@ uglify-es@^3.1.9:
     commander "~2.13.0"
     source-map "~0.6.1"
 
+uin@*:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/uin/-/uin-0.0.1.tgz#e443f77489dc289a296895fafc103f69e92e74d1"
+  integrity sha512-Pg/TNSq39elyMcoIRbiIOy2jtdAc02miOl1IOdKo04neKQnho3/hGRaBMn+ILho+VfOIuN8OWHoBgHPy9OzQhQ==
+
 unbox-primitive@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/unbox-primitive/-/unbox-primitive-1.0.1.tgz"

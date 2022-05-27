@@ -1,6 +1,6 @@
 {
   "name": "native-comp3",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "private": false,
   "main": "src/index.js",
   "scripts": {
@@ -24,5 +24,8 @@
     "@react-native-async-storage/async-storage": "*",
     "react": "*",
     "react-native": "*"
+  },
+  "dependencies": {
+    "react-native-linear-gradient": "^2.5.6"
   }
 }
