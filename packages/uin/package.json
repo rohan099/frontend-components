@@ -1,6 +1,6 @@
 {
-  "name": "uin",
-  "version": "0.0.3",
+  "name": "native-comp3",
+  "version": "0.0.5",
   "private": false,
   "main": "src/index.js",
   "scripts": {

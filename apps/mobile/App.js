@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
+import type { Node } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -24,32 +24,37 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {Add, Multiply} from 'services';
-import {Button,BlueButton, RedButton} from 'uin';
-import {Box} from '@reusejs/react-native-component-template';
+import { Add, Multiply } from 'services';
+import { Button, BlueButton, RedButton,GradientButton } from 'uin';
+import { Box } from '@reusejs/react-native-component-template';
+import LinearGradient from 'react-native-linear-gradient'
 
-const Section = ({children, title}): Node => {
+const Section = ({ children, title }): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
+      <LinearGradient
+        colors={['#4c669f', '#3b5998', '#192f6a']}
+        style={
           {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+            flex: 1,
+            paddingLeft: 15,
+            paddingRight: 15,
+            borderRadius: 5
+          }}
+      >
+        <Text style={{
+          fontSize: 18,
+          fontFamily: 'Gill Sans',
+          textAlign: 'center',
+          margin: 10,
+          color: '#ffffff',
+          backgroundColor: 'transparent',
+        }}>
+          Sign in with Facebook
+        </Text>
+      </LinearGradient>
+
     </View>
   );
 };
@@ -75,8 +80,56 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <BlueButton title="My Blue Button" />
-          <RedButton title= "MY red Button"/>
-          <Box />
+          <RedButton title="MY red Button" />
+          <View style={{marginHorizontal:20}}>
+          <LinearGradient
+          start={{x: 1, y: 0}} end={{x: 0, y: 0}} 
+            colors={[ '#3F76FF', '#003AC9']}
+            style={
+              {
+                flex: 1,
+                paddingLeft: 15,
+                paddingRight: 15,
+                borderRadius: 16
+              }}
+          >
+            <Text style={{
+              fontSize: 18,
+              fontFamily: 'Open Sans Bold',
+              textAlign: 'center',
+              margin: 10,
+              color: '#ffffff',
+              backgroundColor: 'transparent',
+            }}>
+              Get Started
+            </Text>
+          </LinearGradient>
+          </View>
+          <View style={{marginHorizontal:20, marginTop:10}}>
+          <LinearGradient
+          start={{x: 1, y: 0}} end={{x: 0, y: 0}} 
+            colors={[ '#FF5500', '#FF7954']}
+            style={
+              {
+                flex: 1,
+                paddingLeft: 15,
+                paddingRight: 15,
+                borderRadius: 16
+              }}
+          >
+            <Text style={{
+              fontSize: 18,
+              fontFamily: 'Open Sans Bold',
+              textAlign: 'center',
+              margin: 10,
+              color: '#ffffff',
+              backgroundColor: 'transparent',
+            }}>
+             Open Email
+            </Text>
+          </LinearGradient>
+          </View>
+          <GradientButton style={{margin:20}} title="Hello" colors={[ '#FF5500', '#FF7954']}/>
         </View>
       </ScrollView>
     </SafeAreaView>

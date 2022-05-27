@@ -1,5 +1,4 @@
 apply plugin: "com.android.application"
-apply from: '../../node_modules/react-native-unimodules/gradle.groovy'
 apply plugin: 'com.google.gms.google-services'
 
 import com.android.build.OutputFile
@@ -195,10 +194,11 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
+    implementation project(':react-native-linear-gradient')
+
     implementation platform('com.google.firebase:firebase-bom:30.0.1')
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
-    addUnimodulesDependencies()
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
